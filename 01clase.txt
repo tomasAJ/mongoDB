@@ -1,0 +1,35 @@
+Curso de MongoDB
+En este curso vamos a aprender cómo
+utilizar esta poderosa base de datos
+y por qué es la más popular
+en lo que conocemos como bases de datos NoSQL
+o bases de datos orientadas a documentos.
+
+¿Qué es MongoDB?
+Vamos a aprender qué es Mongo, cómo vamos a interactuar con él,
+cómo vamos a hacer consultas muy poderosas y cómo vamos a sacar
+el máximo provecho del estilo de bases de datos y su estructura.
+
+MongoDB al final hace parte de la familia de bases de datos NoSQL
+y es una forma en la cual almacenamos datos para lectura y para escritura
+y tiene una forma muy particular de guardar, él le llama documentos,
+que lo guarda en collecciones.
+Sin embargo, vamos a ver estos conceptos mucho más adelante
+y esta es la perfecta área para empezar a aprender.
+
+Recuerda, este curso lo puedes tomar si ya tienes nociones de Mongo
+o si eres nuevo, ya que vamos a orientarnos mucho en la base de datos
+y a aprender a hacer consultas muy poderosas con él.
+
+Nicolás Molina
+@nicobytes
+Google Developer Expert en categorías como tecnologías web y Angular.
+MVP Most Valuable Professional Microsoft
+Profesor y desarrollador dentro de Platzi
+
+https://www.mongodb.com/
+https://learn.mongodb.com/learning-paths/introduction-to-mongodb
+
+MongoDB in 5 Minutes with Eliot Horowitz
+https://www.youtube.com/watch?v=EE8ZTQxa0AM
+Eliot Horowitz is a founder and the former chief technology officer of MongoDB Inc.

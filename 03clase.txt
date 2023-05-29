@@ -1,0 +1,137 @@
+¿Qué son los documentos?
+
+He mencionado muchas veces esta estructura llamada documentos,
+así que en esta clase vamos a aprender de qué se trata.
+
+Los documentos es la forma en que Mongo va a almacenar
+la información que esté dentro de un dominio o que nosotros queramos
+tener allí.
+
+¿A qué me refiero a dominio?
+Que, por ejemplo, nosotros podemos tener un dominio como
+los productos de un e-commerce, como las clases de un curso,
+como el inventario de una tienda.
+
+Todo eso son un dominio o son entidades que comparten datos
+y podríamos guardarlos en documentos que luego los almacenamos
+en colecciones, pero vamos a ir viéndolo.
+
+Entonces diríamos que un documento es una forma de almacenar
+la información con un conjunto de pares, que vamos a conocer
+como clave-valor o campo-valor.
+
+¿Cómo se ve?
+Al final podríamos tenerlo de la siguiente manera.
+Tenemos un documento que se abre con estos corchetes
+y luego tenemos el campo y luego su valor.
+
+Por ejemplo, esto podría ser un documento
+que escriba un alumno de una clase,
+o un alumno o un usuario.
+{
+    name: "sue",
+    age: 26,
+    status: "A",
+    groups: [ "news", "sports" ]
+}
+
+Fíjate que al final cada una de ellas tiene la separación
+del campo-valor, son dos puntos.
+
+Asigno el campo o la clave, dos puntos, valor.
+
+field:value
+
+Podríamos ver esto también.
+Por ejemplo, esto es lo que es la locación de una ciudad.
+Fíjate que también podemos tener cosas que podemos denominar como
+sub-documentos.
+Por ejemplo, un espacio de location.
+En location tenemos otro documento que sería un sub-documento, un
+documento anillado, el cual tiene más atributos.
+Así es que nosotros vamos a representar nuestra información,
+que si bien es de las bases de datos relacionales,
+lo más normal es que estés orientado a guardar esto en
+una tabla y tenemos columnas y filas.
+Sin embargo, aquí lo que tenemos es un documento
+en el cual tenemos clave-valor para cada uno de sus atributos.
+{
+    "_id": "5c8eccc1caa187d17ca6ed16",
+    "city": "ALPINE",
+    "zip": "35014",
+    "loc": {
+        "y": 33.331165,
+        "x": 86.208934
+    },
+    "pop": 3062,
+    "state": "ALL"
+}
+
+Imagínate lo siguiente.
+Uno de los mejores casos en los que podemos explicar
+estas bases de datos documentales es si queremos hacer una
+aplicación que guarde los contactos, así como estas business
+cards, estas tarjetas de presentación que a veces nos entregan.
+
+Si acogemos este modelo y quisiéramos guardar
+todos sus contactos en una aplicación,
+tendríamos que crear un modelo de datos.
+
+Por ejemplo, podríamos tener un modelo de datos
+con el nombre de nuestra persona, la edad de la persona,
+en dónde trabaja la persona y el teléfono de la persona.
+
+Eso sería un documento.
+Sin embargo, si lleváramos esto a una base de datos relacional,
+si nos entregan una nueva tarjeta de presentación con otro
+campo adicional, por ejemplo, el Twitter, en una base de datos
+relacional nos tocaría abrir una nueva columna y tener espacios
+en vacío, porque al final no todos nuestros usuarios o no
+todos nuestros contactos tienen ese campo de Twitter.
+
+En una base de datos documental, el esquema es flexible.
+Simplemente cada documento puede tener la información
+que empecemos a solicitar, pero si hay alguna extra,
+simplemente lo podemos agregar de forma flexible.
+
+Quiere decir que podemos tener documentos con campos compartidos,
+pero áun así podríamos tener un solo documento en particular
+que tenga una red social, que se llame Twitter, pero no por eso,
+los demás documentos deberían cargar con ese atributo.
+
+Vamos a ir entendiendo esto más en la práctica,
+pero es una de las características de las bases de datos
+y sobre todo de las bases de datos documentales,
+esa flexibilidad en los datos, en cómo yo manipulo
+ese modelo de información.
+
+¿Qué son las colecciones?
+Otra de las cosas que hay que tener en cuenta es nuestras colecciones.Al
+final, todos estos documentos los vamos a almacenar en algo que Mongo 
+llama colecciones, que no solo Mongo lo llama de esta manera, por ejemplo,
+otras bases de datos documentales también lo llama colecciones. Por 
+ejemplo, Firestore también lo llama colecciones en donde podríamos guardar
+documentos. Las colecciones es la forma en la que guardamos esos documentos
+y que normalmente entonces comparten datos entre sí, o al menos sabemos
+que tienen una entidad o un modelo de datos que se relaciona.
+Entonces, podríamos tener la colección de productos, es decir, en
+la colección de productos vamos a tener muchos documentos que son los
+productos de nuestro e-commerce.
+O también podríamos tener una colección llamada usuarios,
+que tenga todos los documentos de todos los usuarios de nuestra aplicación.
+
+Entonces, tenemos este documento, por ejemplo, que tiene un nombre,
+una data, un status, un grupo, que fíjate que aquí hay una raya de datos,
+y todo este documento lo podemos guardar en una colección que al final
+es un conjunto de esos documentos. En esta clase aprendiste los 
+conceptos sobre qué es un documento y qué es una colección.
+Sin embargo todo esto lo vamos a aprender mucho más en la práctica
+con código y viéndolo de forma más tangible.
+Así que acompáñame a la siguiente clase en donde vamos a crear tu primera
+base de datos en MongoDB.
+{
+    name: "al",
+    age: 18,
+    status: "D",
+    groups: [ "politics", "news" ]
+}

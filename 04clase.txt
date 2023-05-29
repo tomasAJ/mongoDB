@@ -1,0 +1,17 @@
+En esta clase vamos a crear tu primer base de datos
+NoSQL con toda la arquitectura de MongoDB.
+Ahora, ¿cómo lo vamos a hacer?
+Vamos a utilizar un servicio en la nube
+que administra tu base de datos en Mongo,
+que es creado por los mismos creadores de Mongo,
+y su servicio se llama Mongo Atlas.
+
+Sin embargo, no te preocupes, también vamos a ver cómo correr Mongo
+internamente como base de datos en tu máquina local y ver que lo
+podemos gestionar en la nube gracias a Mongo Atlas o de forma local
+corriéndolo en tu máquina.
+Mongo Atlas viene ya preestablecido y tiene todo un sistema ya de
+clusterización, todo el motor de Mongo y muchas características que
+nos permiten precisamente ser más fácil administrar este tipo de base
+de datos.
+De por sí, como te menciono

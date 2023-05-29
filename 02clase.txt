@@ -1,0 +1,140 @@
+En esta clase vas a aprender los tipos de bases de datos NoSQL
+que puedes encontrar y cómo Mongo pertenece a una de esas familias.
+
+La primera que vamos a ver son las bases de datos documentales, y
+directamente ahí es la familia a la que pertenece Mongo.
+
+Estas bases de datos se caracterizan porque emparejan los documentos con
+una estructura clave de valor, como los JSON, y a esto le denominan
+documento que son guardadas en colecciones.
+
+MongoDB hace parte de estas bases de documentales, pero no es la única.
+
+También vas a encontrar cosas como Cloud Firestore, que al final
+también tiene este tipo de arquitectura, o Couchbase.
+
+Sin embargo no son las únicas bases de datos NoSQL.
+También tenemos las que son orientadas a grafos que se enfocan en
+representar su información con conexiones de datos.
+
+Esto se utiliza mucho en redes sociales y la más popular es
+la de Neo4j.
+
+Ahora también están los tipos de bases de datos clave de valor.
+Estas son igual bases de datos NoSQL, pero solo guardan, precisamente,
+en una estructura de clave de valor para acceso de memoria rápido.
+
+Una de las más comunes que podemos ver allí son las bases de datos como
+Redis.
+Y finalmente tenemos las bases de datos orientadas a columnas.
+En estas bases de datos podemos encontrar a bases de datos
+como Cassandra, y además permiten, o sus características, que permiten
+consultas de grandes conjuntos de datos, y las almacenan todas en
+columnas en lugar de filas.
+
+Por ejemplo, la más popular en este punto es Cassandra.
+
+Una de las características que tienen este tipo de bases de datos
+NoSQL, que recordemos que NoSQL es no solo SQL, es su gran 
+facilidad para escalar.
+
+Vamos a hablar un poco de qué es el escalamiento y cuál es esta ventaja
+que tienen este tipo de bases de datos, y que por ende la tiene Mongo.
+
+Normalmente cuando hablamos de escalamiento, hay dos tipos de
+escalamiento, escalamiento vertical y escalamiento horizontal.
+
+El escalamiento vertical se denomina porque al final tenemos una
+máquina o un servidor, y a medida que queremos soportar más capacidad o
+mayor velocidad, lo que hacemos es incrementar las características de
+esa máquina.
+
+Por ejemplo, si tenemos una máquina en donde corre nuestra base de
+datos, que tiene 5 GB de RAM, y queremos que sea más rápida, entonces
+lo que hacemos es aumentar los límites o los recursos de esa máquina.
+
+Entonces, si ahora queremos más velocidad, aumentamos más procesador,
+más memoria RAM, o le metemos más espacio de almacenamiento,
+pero estamos incrementando la misma máquina.
+
+Eso es lo que se denomina escalamiento vertical.
+
+Sin embargo, el escalamiento horizontal es totalmente diferente.
+
+Lo que hacemos es tener una de esas máquinas y copiarla, o
+tener varios de estos nodos, lo cual hace y asegura, por ejemplo,
+características como alta disponibilidad, tener sistemas de 
+replicación o tener todo un conjunto que responda en simultáneo, sin
+necesidad de escalar como tal de forma vertical.
+
+Ahora, en un gráfico vemos cómo esto puede tener beneficios
+en el costo y tiempo.
+
+Por ejemplo, hacer escalamiento vertical es más fácil,
+sin embargo, con el tiempo es más costoso.
+
+Ahora, con el escalamiento horizontal, puede ser más costoso en un
+inicio, pero luego se mantiene estándar, porque al final tenemos
+que gestionar varias máquinas y ver cómo se conectan entre ellas.
+
+Esta es una de las características que aprovechan muy bien las
+bases de datos NoSQL, porque ellos generan un clúster de información
+en el cual vamos a tener los datos y estos se van a conectar entre sí,
+aplicando como este paradigma de escalamiento horizontal.
+
+Y es mucho más fácil hacer escalamiento de una base de datos
+NoSQL que de una SQL, porque al final son documentos, no son
+información tan estructurada o relacionada, sino que es mucho
+más fácil de replicar.
+
+Pero veamos precisamente, ¿qué es esto de la replicación?
+
+La replicación es esta técnica en donde una vez distribuimos
+nuestra base de datos en varios de estos nodos, haciendo
+escalamiento horizontal, lo que hacemos es que tenemos un punto
+central que llamaríamos un LoadBalancer o un balanceador de carga,
+en donde asigna las peticiones y las consultas a cada uno de estos
+nodos de una forma ordenada.
+
+Quiere decir que podríamos tener procesamiento en paralelo y además
+de eso, que si alguna réplica falla, alguna otra puede levantarse
+y pues completar esa consulta o esa tarea que estamos desarrollando. 
+
+Eso nos daría una de las características muy interesantes del 
+escalamiento horizontal, que es la alta disponibilidad.
+
+Por ejemplo, en la estructura de un escalamiento vertical,
+si se me cae ese servidor, por más memoria RAM o por más
+memoria que yo le haya puesto a ese servidor, pues es
+la única máquina que tengo.
+
+Si se cae esa, se cae todo mi sistema.
+En cambio, si tengo escalamiento horizontal, no importa si se cae
+el nodo A, nodo B, tengo otros nodos que pueden rápidamente empezar
+a trabajar sin tener una pérdida y dando una alta disponibilidad.
+
+Esto ya lo tiene Mongo y las bases de datos NoSQL son muy buenas para
+hacer este tipo de replicación y este tipo de escalamiento
+y eso lo vamos a ir viendo en estos cursos.
+
+Sin embargo, quiero darte un aviso.
+En este curso nos vamos a familiarizar con la base de datos
+de Mongo, cómo podemos instalarla, cómo podemos empezar a trabajar
+con ella, correrla en nuestra computadora, hacer consultas, 
+hacer consultas muy interesantes y complejas a un dataset que vamos
+a cargar.
+
+Sin embargo, como nos vamos a familiarizar con todo el motor,
+hacer queries, insertar, vamos a hacer un curso exclusivo de
+modelado de datos para realmente entrar en un caso de estudio
+en donde haremos patrones de modelado de datos, así que este curso viene
+en combo.
+
+Este es el primer curso en donde nos vamos a familiarizar y no de los
+altos porque vamos a hacer consultas muy interesantes que luego las vamos
+a aplicar en ese segundo curso de modelado de datos.
+
+Eso te lo digo para que de una vez estés preparado para lo que arranca
+con toda esta familia de cursos.
+
+https://platzi.com/clases/2509-arquitectura-alta-concurrencia/42305-tipos-de-escalamiento-vertical-y-horizontal/
